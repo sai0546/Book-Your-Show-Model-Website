@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking System</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Movie Ticket Booking</h2>
+        
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="Email"  required>
+        </form>
+        <div id="output">
+            <h2></h2>
+        </div>
+    </div>
+    <div>
+        <a href="index3.html" class="cta-button" onclick="submitForm()"> Proceed to Payment</a>
+      </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

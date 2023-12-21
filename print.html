@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket</title>
+    <style>
+        body {
+           
+            text-align: center;
+        }
+        .ticket {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <h2>Movie Ticket</h2>
+        <p><strong>Movie Name:</strong> <span id="movieName"></span></p>
+        <p><strong>Name:</strong> <span id="userName"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="mobileNumber"></span></p>
+
+        <img src="qrcode.png" alt="Ticket Photo" width="300" height="200">
+
+        <script src="print.js"></script>
+    </div>
+</body>
+</html>

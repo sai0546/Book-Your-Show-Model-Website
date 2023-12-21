@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Change background color to black */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff; /* Set text color to white for better visibility */
+}
+
+.movie-container {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff; /* Set text color to white for better visibility */
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.showcase .seat {
+    width: 30px;
+    height: 30px;
+    background-color: #333; /* Dark gray for seat color */
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.showcase .selected {
+    background-color: #00ff00; /* Light green for selected seats */
+}
+
+.showcase .sold {
+    background-color: #ff6347; /* Tomato red for sold seats */
+}
+
+.container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #333; /* Dark gray for seat color */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat.sold {
+    background-color: #ff6347;
+    cursor: not-allowed;
+}
+
+.screen {
+    height: 20px;
+    background-color: #fff; /* White for the screen color */
+    margin-top: 20px;
+}
+
+.text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff; /* Set text color to white for better visibility */
+}
+
+.cart-container {
+    margin-top: 40px;
+    width: 400px;
+    background-color: #333; /* Dark gray for the cart container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    margin-bottom: 10px;
+    color: #fff; /* Set text color to white for better visibility */
+}
+
+#cart-list {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#card-number,
+#expiry-date,
+#cvv {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #fff; 
+    border-radius: 5px;
+    background-color: #333; 
+    color: #fff; 
+}
+
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e53935;
+}
+
+
